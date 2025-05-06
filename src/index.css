@@ -7,3 +7,9 @@ body{
     @apply font-kanit;
     
 }
+.item{
+    background-color: aqua;
+    padding: 2px;
+    width: 10%;
+    
+}

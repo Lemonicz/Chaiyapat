@@ -11,11 +11,11 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div className=" App bg-gray-500 min-h-screen w-full " >
       <Nav />
       <Main />
       <Footer />
-    </>
+    </div>
   )
 }
 
