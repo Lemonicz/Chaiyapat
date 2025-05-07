@@ -1,23 +1,27 @@
 import React from "react";
 import Footer from "./Footer";
+import images from "../images/Chyp.png";
 
 function Main() {
     return (
-        <main className="flex-1 items-center m-6 ">
+        <main className=" flex-1 items-center m-6 ">
 
-            // เนื้อหา Profile
-            <section id="Profile" className="border-4 border-black bg-white shadow-lg rounded-lg p-4 ">
-                <h1 className="text-4xl ">Profile</h1>
-                <p className="text-xl p-2">ตรงนี้ควรมีข้อความ
 
-                </p>
-                <div className="flex justify-center items-center mt-4">
-                    <img src="https://cdn.discordapp.com/attachments/920144008326569994/1368985856442105866/16b780ab6d2f852a.jpg?ex=681a36ee&is=6818e56e&hm=6964c6dd79e1aaa088d8cf365f4787d969e47dca98eedccc51fe9e3d5fcaaf09&" alt="Face" className="w-56 rounded-full" />
+            <section id="Profile" className=" bg-white shadow-lg rounded-xl p-4 ">
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <p className="text-base  lg:text-xl p-2 border-2 w-full col-span-2">ตรงนี้ควรมีข้อความ</p>
+                    <div className="border-2 w-full col-span-1 flex justify-center items-center "
+                    >
+                        <div name="MyPic" className="flex  w-2/3 border-2 ">
+                            <img src="src\images\Chyp.png" alt="MyPic" className="w-full h-auto object-contain rounded-full border-2 border-black" />
+                        </div>
+                    </div>
                 </div>
             </section>
 
             <section id="Contact" className="border-4 mt-4 border-black bg-white shadow-lg rounded-lg p-4">
-                <h1 className="text-4xl flex justify-center">Contact</h1>
+                <h1 className="text-xl md:text-2xl lg:text-4xl flex justify-center">Contact</h1>
                 <div className="border-2 border-black bg-gray-200 rounded-lg w-full sm:w-2/3 md:w-1/2 lg:w-1/3 mx-auto">
 
 
@@ -65,8 +69,23 @@ function Main() {
 
             <section className="flex justify-center items-center mt-4 border-4 border-black rounded-lg" id="Clients">
                 <div className="">
-                    <img src="https://cdn.discordapp.com/attachments/842442154977656833/1368974737379819560/IMG_1485.png?ex=681a2c93&is=6818db13&hm=919846acd34c2a0d04c543d7c1f5312840bbf426e716ccc26dcffae138d61bc3&" alt="" className="h-64" />
+                    <img src="https://cdn.discordapp.com/attachments/842442154977656833/1368974737379819560/IMG_1485.png?ex=681a2c93&is=6818db13&hm=919846acd34c2a0d04c543d7c1f5312840bbf426e716ccc26dcffae138d61bc3&" alt="logo" className="h-64" />
                 </div>
+            </section>
+
+            <section id="test">
+                <div className="grid grid-cols-1  md:grid-cols-2 gap-4 p-4">
+                    
+
+                    <div className="bg-white p-4 shadow rounded">Content 2</div>
+                    <div className="bg-white p-4 shadow rounded">Content 3</div>
+                    <div className="bg-white p-4 shadow rounded">Content 4</div>
+                    <div className="bg-white p-4 shadow rounded">Content 5</div>
+                    <div className="bg-white p-4 shadow rounded">Content 6</div>
+                    <div className="bg-white p-4 shadow rounded">Content 7</div>
+                    <div className="bg-white p-4 shadow rounded">Content 8</div>
+                </div>
+
             </section>
 
         </main>

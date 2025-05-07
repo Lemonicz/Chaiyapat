@@ -3,13 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body{
-    @apply font-kanit;
+    font-family: 'Kanit', sans-serif;
+    
     
 }
-.item{
-    background-color: aqua;
-    padding: 2px;
-    width: 10%;
-    
+.bg-profile{
+    background-image:url(src\images\bg-profile.jpg);
 }
